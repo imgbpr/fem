@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="./images/logo_128.png"
+    />
+
+    <title>QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.r1{
+    background-color: white;
+    height: 450px;
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.r2{
+    background-color: hsl(219, 84%, 47%);
+    height: 260px;
+    width: 260px;
+    margin-top: 10px;
+    background-image: url('./images/image-qr-code.png');
+    border-radius: 5%;
+  background-size: cover;
+  position: absolute;
+}
+
+.r3{
+height: 160px;
+width: 250px;
+margin-top:95%;
+font-family: Outfit;
+font-size: 20px;
+font-weight:900;
+text-align: center;
+text-decoration: rgb(197, 14, 14);
+text-shadow: 5px;
+}
+
+.r4{
+    height: 80px;
+    width: 260px;
+    position: absolute;
+    margin-top: -20px;
+    font-family: Outfit;
+    opacity: 50%;
+    font-size: 15px;
+
+}
+
+    </style>
+  </head>
+  <body class="container_noscroll">
+    <a href="ass2\ass2.html" class="btn-flip-next" data-back="Go" data-front="Next"></a>
+
+    <div class="attribution"></div>
+    <div class="r1">
+      <div class="r2"></div>
+      <div class="r3">
+        <p>Improve your front-end skills by building projects</p>
+        <div class="r4">
+          <p>Scane the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>

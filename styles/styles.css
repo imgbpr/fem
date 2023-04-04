@@ -1,0 +1,104 @@
+/* for next and prev buttons */
+
+
+
+.container_noscroll {
+    -ms-overflow-style: none;
+    /* Internet Explorer > 10 */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.container_noscroll::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+  .btn-flip-next {
+    margin-left: auto;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans";
+  }
+  .btn-flip-next:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  .btn-flip-next:hover:before {
+    opacity: 0;
+    transform: translateX(50%) rotateY(90deg);
+  }
+  .btn-flip-next:after {
+    border: 1px solid hsl(228, 85%, 51%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 40px;
+    color: hsl(228, 85%, 51%);
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #ffffff;
+    content: attr(data-back);
+    transform: translateX(-50%) rotateY(90deg);
+    border-radius: 10px;
+  }
+  .btn-flip-next:before {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    display: block;
+    width: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: hsl(228, 85%, 51%);
+    content: attr(data-front);
+    border-radius: 10px;
+    transform: translateY(0) rotateX(0);
+  }
+
+  
+  .btn-flip-back {
+    margin-right: auto;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Open Sans";
+  }
+  .btn-flip-back:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  .btn-flip-back:hover:before {
+    opacity: 0;
+    transform: translateX(-50%) rotateY(90deg);
+  }
+  .btn-flip-back:after {
+    border: 1px solid hsl(228, 85%, 51%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 40px;
+    color: #ffffff;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: hsl(228, 85%, 51%);
+    content: attr(data-back);
+    transform: translateX(50%) rotateY(90deg);
+    border-radius: 10px;
+  }
+  .btn-flip-back:before {
+    border: 1px solid hsl(228, 85%, 51%);
+    color: hsl(228, 85%, 51%);
+    display: block;
+    width: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #ffffff;
+    content: attr(data-front);
+    border-radius: 10px;
+    transform: translateY(0) rotateX(0);
+  }
